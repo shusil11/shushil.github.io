@@ -1,4 +1,4 @@
-// Mobile Menu Toggle
+//  Mobile Menu Toggle
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -136,7 +136,7 @@ function animateCounters() {
   countersAnimated = true;
 }
 
-// Smooth Scrolling
+//  Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -170,58 +170,10 @@ window.addEventListener("scroll", () => {
 });
 
 //  Form Submission
-// const contactForm = document.querySelector(".contact-form");
+// NO FORM BLOCKING - Let Formspree handle it naturally
+// The form will submit to Formspree's server when user clicks "Send Message"
 
-// if (contactForm) {
-//   contactForm.addEventListener("submit", (e) => {
-//     e.preventDefault();
-
-//     // Get form data
-//     const formData = new FormData(contactForm);
-//     const name = formData.get("name");
-//     const email = formData.get("email");
-//     const message = formData.get("message");
-
-//     // Here you would typically send the data to a server
-//     // For now, we'll just show an alert
-//     alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-
-//     // Reset form
-//     contactForm.reset();
-
-//     // In a real application, you would use fetch or axios to send the data:
-//     /*
-//         fetch('your-server-endpoint', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//             },
-//             body: JSON.stringify({ name, email, message })
-//         })
-//         .then(response => response.json())
-//         .then(data => {
-//             alert('Message sent successfully!');
-//             contactForm.reset();
-//         })
-//         .catch(error => {
-//             alert('Error sending message. Please try again.');
-//         });
-//         */
-//   });
-// }
-
-//  Cursor Trail Effect
-let mouseX = 0;
-let mouseY = 0;
-let trailX = 0;
-let trailY = 0;
-
-document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
-
-// Navbar Background on Scroll
+//  Navbar Background on Scroll
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
@@ -232,7 +184,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Project Card Tilt Effect
+//  Project Card Tilt Effect
 const projectCards = document.querySelectorAll(".project-card");
 
 projectCards.forEach((card) => {
