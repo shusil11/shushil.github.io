@@ -170,45 +170,45 @@ window.addEventListener("scroll", () => {
 });
 
 //  Form Submission
-const contactForm = document.querySelector(".contact-form");
+// const contactForm = document.querySelector(".contact-form");
 
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+// if (contactForm) {
+//   contactForm.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
-    // Get form data
-    const formData = new FormData(contactForm);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
+//     // Get form data
+//     const formData = new FormData(contactForm);
+//     const name = formData.get("name");
+//     const email = formData.get("email");
+//     const message = formData.get("message");
 
-    // Here you would typically send the data to a server
-    // For now, we'll just show an alert
-    alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
+//     // Here you would typically send the data to a server
+//     // For now, we'll just show an alert
+//     alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
 
-    // Reset form
-    contactForm.reset();
+//     // Reset form
+//     contactForm.reset();
 
-    // In a real application, you would use fetch or axios to send the data:
-    /*
-        fetch('your-server-endpoint', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ name, email, message })
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert('Message sent successfully!');
-            contactForm.reset();
-        })
-        .catch(error => {
-            alert('Error sending message. Please try again.');
-        });
-        */
-  });
-}
+//     // In a real application, you would use fetch or axios to send the data:
+//     /*
+//         fetch('your-server-endpoint', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify({ name, email, message })
+//         })
+//         .then(response => response.json())
+//         .then(data => {
+//             alert('Message sent successfully!');
+//             contactForm.reset();
+//         })
+//         .catch(error => {
+//             alert('Error sending message. Please try again.');
+//         });
+//         */
+//   });
+// }
 
 //  Cursor Trail Effect
 let mouseX = 0;
